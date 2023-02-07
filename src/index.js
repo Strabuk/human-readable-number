@@ -18,11 +18,13 @@ module.exports = function toReadable (number) {
 
     if (n === 10) return A3[n-10];
 
+    if (n === 20) return A3[n-19];
+
     if (n > 0 && n < 10) return A1[n-1];
 
     if (n > 10 && n < 20) return A2[n-11];
 
-    if (n > 20 && n < 100) return A3[b-2]+A1[n-21];
+    if (n > 20 && n < 100) return A3[b-1] + A1[n-21];
 
     if (n > 100 && n <1000) return A4[n-100]
 
